@@ -1,0 +1,19 @@
+ class Main {
+    public static int fact(int n) {   
+        if (n == 0) {  
+            return 1;  // Base case
+        }
+           
+        int result = n * fact(n - 1);
+        
+        return result;  // Returning the calculated value
+    }
+
+    public static void main(String[] args) {
+        int n = 4;
+        
+        System.out.print("Factorial of 4 is:");
+        int factorial = fact(n);
+        System.out.println(factorial);
+    }
+}
