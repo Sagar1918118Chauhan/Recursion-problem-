@@ -1,0 +1,19 @@
+ class Main {
+    public static int sum(int n) {   
+        if (n == 0) {  
+            return 0;  // Base case
+        }
+           
+        int result = n + sum(n-1);
+        
+        return result;  // Returning the calculated value
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        
+        System.out.print("sum of 1 to 10==");
+        int TotalSum = sum(n);
+        System.out.println(TotalSum);
+    }
+}
